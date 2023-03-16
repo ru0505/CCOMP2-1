@@ -1,3 +1,4 @@
 # CCOMP2-1
 
-# ruth 
+# ruth
+# ciencia de la computacion  
