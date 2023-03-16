@@ -2,6 +2,6 @@
 
 # ruth
 # ciencia de la computacion I
-# univercidad catolica san pablo
+# universidad catolica san pablo
 # hola
 
