@@ -11,7 +11,7 @@ void ret(int y[], int x) {
         y[i]=x;
         y[u]=a;
     }
-    cout<<y[a]<<end;
+    return ;
 }
 
 
