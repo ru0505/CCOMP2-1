@@ -1,0 +1,14 @@
+/*
+-los operadores de asignacion devuelven el valor del objeto especificado por el operando izquierdo despues de la asignacion.
+El tipo resultante es el tipo resultante es el tipo del operando izquierdo.
+El resultado de una expresion de asignacion es siempre un valor.
+-El ampersand es un operador de c++ y es comunmente utilizado para los puteros.
+Este operador nos permite obtener la direccion de menoria de una variable cualquiera y justo esto (la direccion de memoria)
+lo que utlizan los punteros para referenciar valore.
+-El operador de coma evalua la expresion a su izquierda, luego la exprecion a su derecha y devuelve el valor de la ultima expresion.
+-Operador de acceso a mienbros (.)
+operador de puntero a funcion miencion mienbro(.*)
+operador de resolucion de ambito (::)
+operador ternario condicional(?:)
+
+*/
