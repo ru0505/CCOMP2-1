@@ -33,20 +33,20 @@ void Date::setDate(int mm,int dd,int yy){
     }
 }
 Date& Date::operator++() {
- helpIncrement(); // increment date
- return *this; // reference return to create an lvalue
+ helpIncrement(); 
+ return *this; 
 } 
 Date Date::operator++(int) {
- Date temp{*this}; // hold current state of object
+ Date temp{*this};
  helpIncrement(); 
- return temp; // value return; not a reference return
+ return temp; 
 }
 Date& Date::operator+=(unsigned int additionalDays) {
  for (unsigned int i = 0; i < additionalDays; ++i) {
  helpIncrement();
  }
 
- return *this; // enables cascading
+ return *this;
 } 
 bool Date::leapYear(int testYear) {
     return (testYear % 400 == 0 ||
@@ -60,21 +60,21 @@ bool Date::endOfMonth(int testDay) const {
       return testDay == days[month];
     }
     } 
-    // function to help increment the date
+   
 void Date::helpIncrement() {
-    // day is not end of month
+    
     if (!endOfMonth(day)) {
-      ++day; // increment day
+      ++day; 
     }
     else {
-    if (month < 12) { // day is end of month and month < 12
-        ++month; // increment month
-        day = 1; // first day of new month
+    if (month < 12) { 
+        ++month; 
+        day = 1; 
     }
-    else { // last day of year
-        ++year; // increment year
-        month = 1; // first month of new year
-        day = 1; // first day of new month
+    else { 
+        ++year;
+        month = 1; 
+        day = 1; 
          }
      }
     } 
@@ -83,5 +83,5 @@ void Date::helpIncrement() {
         "March", "April", "May", "June", "July", "August",
      "September", "October", "November", "December"};
     output << monthName[d.month] << ' ' << d.day << ", " << d.year;
-    return output; // enables cascading
+    return output; 
  } 
