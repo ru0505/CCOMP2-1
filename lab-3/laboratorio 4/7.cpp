@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     while (true) {
-        system("cls");
+        
         int n{ 0 }, cont{0};
         cout << "Ingrese un numero : ";
         cin >> n;
@@ -28,5 +28,6 @@ int main() {
                 }
             }
             system("pause");
-    }//while
-}//main
+    }
+    return 0;
+}
