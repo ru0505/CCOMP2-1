@@ -25,6 +25,7 @@ int main() {
                 if (cont == n) {
                     cout << endl;
                     cout << "El numero primo en la posicion " << n << " es: " << i << endl;
+                    break;
                 }
             }
             
