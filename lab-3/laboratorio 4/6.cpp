@@ -4,16 +4,18 @@ using namespace std;
 
 int main() 
 {
-
+  int a;
+  cout<<"escribe la cantidad de cuadrados que quieres";
+  cin>>a;
   int resta, pares, cuadrados;
-  cuadrados=resta=0;
-  for(pares=2;pares<=100;pares+=2)
+  cuadrados=suma=0;
+  for(pares=2;pares<=a;pares+=2)
  {
      cuadrados = pares * pares;
-     resta =resta - cuadrados;
+     suma=suma- cuadrados;
  }
  
- cout << "\nLa resta de los cuadrados del 0 al cien es: " << resta << endl;
+ cout << "\nLa suma de los cuadrados : " << suma << endl;
  
  
  return 0;
