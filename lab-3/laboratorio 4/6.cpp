@@ -1,22 +1,20 @@
-#include <stdio.h>
-using namespace std;
 #include <iostream>
 
+using namespace std;
 
-int main(){
-    int b;
-    cout<<"escriba un limite: ";
-    cin>>b;
-    int c{1};
-    int v{0};
-    while(c){
-        for (int i=1; i<b;i++){
-            if ((c%i)==0){
-                c++;
-                v+=c;
-            }else{break;}
-        }
-        break;
-    }cout<< "el numero pequeño es: "<<v;
-    return 0;
+int main() 
+{
+
+  int resta, pares, cuadrados;
+  cuadrados=resta=0;
+  for(pares=2;pares<=100;pares+=2)
+ {
+     cuadrados = pares * pares;
+     resta =resta - cuadrados;
+ }
+ 
+ cout << "\nLa resta de los cuadrados del 0 al cien es: " << resta << endl;
+ 
+ 
+ return 0;
 }
