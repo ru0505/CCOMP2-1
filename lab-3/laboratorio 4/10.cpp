@@ -9,8 +9,8 @@ int main() {
         cout << "Ingrese un numero menor a 2 000 000: ";
         cin >> n;
         if (n >=2000000) {
-            cout << "Dije menor!!!!!!!! >:C" << endl;
-            system("pause");
+            cout << "Dije menor!!" << endl;
+            
             continue;
         }//if
         else {
