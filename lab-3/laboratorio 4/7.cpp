@@ -27,7 +27,7 @@ int main() {
                     cout << "El numero primo en la posicion " << n << " es: " << i << endl;
                 }
             }
-            system("pause");
+            
     }
     return 0;
 }
