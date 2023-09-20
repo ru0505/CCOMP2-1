@@ -8,7 +8,7 @@ int main() {
         int n{ 0 }, cont{0};
         cout << "Ingrese un numero : ";
         cin >> n;
-            for (long long i = 2; cont != n; i++) {
+            for (long long i = 2; i != n; i++) {
                 int x{ 0 };
                 if (i <= 1) {
                     continue;
