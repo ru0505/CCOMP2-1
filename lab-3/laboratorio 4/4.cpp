@@ -30,12 +30,13 @@ int main(void)
     int n ;
     cout<< "escribe un numero: ";
     cin>> n ;
+    int a{0};
  
     if (isPalindrome(n)) {
-        cout<<"Palindrome";
+        a=n;
     }
     else {
-        cout<<"Not Palindrome";
+        a=a;
     }
  
     return 0;
