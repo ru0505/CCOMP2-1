@@ -1,0 +1,171 @@
+//inicializacion
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int arr [4];
+    cout << "por favor ingrese 4 valores "<< endl;
+
+    for (int i=0;i <4;i++)
+        cin >> arr [i];
+    cout<<"los valores del arreglo son ";
+    for (int i =0;i < 4; i++)
+      cout << " "<< endl;
+    cout << endl;
+    return 0;
+}
+
+//arreglo
+#include <iostream>
+using namespace std;
+
+int main (){
+
+    int arr[4];
+
+    //inicializa el arreglo
+
+    arr [0]=15;
+    arr [1]=25;
+    arr [2]=35;
+    arr [3]=45;
+    arr [4]=55;
+
+    cout << arr[0] << endl;
+    cout << arr[1] << endl;
+    cout << arr[2] << endl;
+    cout << arr[3] << endl;
+    cout << arr[4] << endl;
+
+
+    //cout << endl;
+
+    int arr2[4]= {2,4,5,6};
+
+    cout << arr[0] << endl;
+    cout << arr[1] << endl;
+    cout << arr[2] << endl;
+    cout << arr[3] << endl;
+    cout << arr[4] << endl;
+
+
+}
+
+//funcion con arreglo
+
+ #include <iostream>
+using namespace std;
+
+int sumar (const int arr[],const int tam ){
+long sum {0};
+int i =0;
+while(i < tam){
+//for(int i =0;i < tan ;sum += arr [i++]);
+sum += arr [i++];
+}
+return sum;
+}
+
+int main(){
+    int arr [4];
+    cout << "por favor ingrese 4 valores "<< endl;
+
+    for (int i=0;i <4;i++)
+        cin >> arr [i];
+    cout<< sumar (arr,4) << endl;
+
+    return 0;
+}
+
+//recur_suma
+
+
+ #include <iostream>
+using namespace std;
+
+int sumar (const int arr[],const int tam ){
+long sum {0};
+int i =0;
+while(i < tam){
+//for(int i =0;i < tan ;sum += arr [i++]);
+sum += arr [i++];
+}
+return sum;
+}
+
+
+int recur_suma(const int arr[], int tam){
+    if (tam<0){
+        return 0;
+    }else{
+        return arr[tam-1]+ recur_suma(arr,tam-1);
+    }
+
+}
+int main(){
+    int arr [4];
+    cout << "por favor ingrese 4 valores "<< endl;
+
+    for (int i=0;i <4;i++)
+        cin >> arr [i];
+    cout<< sumar (arr,4) << endl;
+    cout<< recur_suma (arr,4) << endl;
+
+    return 0;
+}
+
+// recur_2
+
+#include <iostream>
+using namespace std;
+
+int sumar (const int arr[],const int tam ){
+	long sum {0};
+	int i =0;
+	while(i < tam){
+		//for(int i =0;i < tan ;sum += arr [i++]);
+		sum += arr [i++];
+	}
+	return sum;
+}
+	
+	
+int recur_suma(const int arr[], int tam){
+	if (tam<=0){
+		return 0;
+	}else{
+		return arr[tam-1] + recur_suma(arr,tam-1);
+	}
+		
+}
+	
+void imprimir(const int arr[],int tam){
+	for (int i=0; i < tam;i++){
+	   cout << " " << arr [i];
+	}
+
+}
+
+	
+void imprimir_recur(const int arr[],int tam ){
+	if (tam<0){
+		return 0;
+		
+	}else{
+		return arr[tam-1] + imprimir_recur(const int arr[],int tam-1 )
+	}
+}
+int main(){
+	int arr [4];
+	int tam=4;
+	cout << "por favor ingrese 4 valores "<< endl;
+			
+	for (int i=0;i <tam;i++)
+		cin >> arr [i];
+	cout<<"la suma es "<< sumar (arr,tam) << endl;
+	cout<<"la suma recursiva es "<< recur_suma (arr,tam) << endl;
+			
+	imprimir(arr,tam);
+	return 0;
+}
