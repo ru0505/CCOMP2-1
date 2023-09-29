@@ -149,11 +149,12 @@ void imprimir(const int arr[],int tam){
 
 	
 void imprimir_recur(const int arr[],int tam ){
-	if (tam<0){
+	if (tam==0){
 		return 0;
 		
 	}else{
-		return arr[tam-1] + imprimir_recur(const int arr[],int tam-1 )
+		cout << arr[tam-1];
+                imprimir_recur(arr[],int tam-1 );
 	}
 }
 int main(){
@@ -168,4 +169,56 @@ int main(){
 			
 	imprimir(arr,tam);
 	return 0;
+}
+
+
+
+
+// arreglos2
+/**
+ * implemente una funcion que reciba un arreglo de enteros y su tamaño e invierta los elementos
+*/
+
+
+#include <iostream>
+
+using namespace std;
+
+void intercambio(int &a, int &b){
+    int ai=0;
+    ai=a;
+    a=b;
+    b=ai;
+}
+void invertir(int arr[],int tam){
+        for (int i =0; i < tam /2; i++){
+            int temporal=arr[i];
+            arr[i]= arr[tam-i-1];
+            arr[tam-i-1]=temporal;
+        }
+}
+void imvertirrec(int arr[], int tam, int temporal=0){
+    if(temporal>tam)
+        return;      
+        
+        imvertirrec(arr,tam -1,temporal+1);
+}   
+
+void imprimir(const int arr[],int tam){
+	for (int i=0; i < tam;i++){
+	   cout << " " << arr [i];
+	}
+
+}
+
+int main(){
+    int tam =5;
+    int arr[5]={1,1,2,2,1};
+    
+    invertir (arr, tam);
+    cout<<endl;
+    
+    imvertirrec(arr, tam);
+    imprimir(arr, tam);
+    return 0;
 }
