@@ -1,0 +1,48 @@
+form {
+
+	flex-direction: column;
+	background-color: #f2f2f2;
+	padding: 300px;
+	box-shadow: 0px 0px  0px #e2bcbc;
+	border: #e2bcbc;
+	margin-bottom: 30px;
+	
+}
+.yo{
+	text-align: center;
+}
+	
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 5px;
+	border-radius: 3px;
+	
+	width: 100%;
+}
+
+h1 {
+    margin-top: 100px;
+    text-align: center;
+	text-size-adjust: 55 px;
+    
+}
+
+input[type="submit"] {
+	background-color: #d4a7da;
+	color: rgb(0, 0, 0);
+	padding: 10px ;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+	
+input[type="submit"]:hover {
+	background-color: #ad8b8b;
+}
+
