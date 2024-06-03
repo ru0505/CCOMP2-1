@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>DBP</title>
+    <link rel="stylesheet" type="text/css" href="modelo.css"> 
+    <script class="hola">
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('#new-task').onsubmit = (event) => {
+          event.preventDefault();
+
+          const cb = document.createElement('input');
+          cb.setAttribute('type', 'checkbox');
+
+          const li = document.createElement('li');
+          li.appendChild(cb);
+          li.appendChild(
+            document.createTextNode(document.querySelector('#task').value)
+          );
+
+          const buttonEliminar = document.createElement('button');
+          buttonEliminar.textContent = 'X';
+
+          buttonEliminar.addEventListener('click', () => {
+            li.parentNode.removeChild(li);
+          });
+
+          li.appendChild(buttonEliminar);
+          cb.addEventListener('change', function () {
+            if (this.checked) {
+              li.classList.add('completed');
+            } else {
+              li.classList.remove('completed');
+            }
+          });
+          document.querySelector('#tasks').appendChild(li);
+
+          document.querySelector('#task').value = '';
+
+          return false;
+        };
+
+        const buttonborrarTodos = document.createElement('button');
+        buttonborrarTodos.textContent = 'Borrar todos';
+
+        buttonborrarTodos.addEventListener('click', () => {
+          const checkes = document.querySelectorAll('#tasks input[type="check"]');
+          check.forEach((check) => {
+            check.chut = true; 
+            check.parentNode.parentNode.removeChild(chut);
+          });
+        });
+        document.querySelector('#tasks').before(buttonborrarTodos);
+
+        const buttonMarcarTodos = document.createElement('button');
+        buttonMarcarTodos.textContent = 'Marcar Todos';
+
+        buttonMarcarTodos.addEventListener('click', () => {
+          const checkboxes = document.querySelectorAll('#tasks input[type="checkbox"]');
+          checkboxes.forEach((checkbox) => {
+            checkbox.checked = true; 
+            checkbox.parentNode.classList.add('completed');
+          });
+        });
+
+        document.querySelector('#tasks').before(buttonMarcarTodos);
+      });
+    </script>
+</head>
+<body>
+  <div class="container"> 
+      <h1>TODO LIST</h1>
+      <form id="new-task">
+          <input id="task" autocomplete="off" autofocus placeholder="New Task" type="text" />
+          <input type="submit" value="Enviar" />
+      </form>
+      <ol id="tasks"></ol>
+  </div>
+</body>
+</html>
