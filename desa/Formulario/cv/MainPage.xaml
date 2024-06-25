@@ -1,0 +1,33 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiCVApp.MainPage"
+             BackgroundColor="Purple">
+
+    <StackLayout Padding="10">
+        <Label Text="Curriculum Vitae" FontSize="24" HorizontalOptions="CenterAndExpand" TextColor="White"/>
+
+        <Label Text="Nombre:" FontSize="18" TextColor="White"/>
+        <Label Text="Ruth Mery" FontSize="18" TextColor="White"/>
+
+        <Label Text="Apellidos:" FontSize="18" TextColor="White"/>
+        <Label Text="Benique Huaman" FontSize="18" TextColor="White"/>
+
+        <Label Text="Edad:" FontSize="18" TextColor="White"/>
+        <Label Text="19 años" FontSize="18" TextColor="White"/>
+
+        <Label Text="Nacionalidad:" FontSize="18" TextColor="White"/>
+        <Label Text="Peruana" FontSize="18" TextColor="White"/>
+
+        <Label Text="Carrera Profesional:" FontSize="18" TextColor="White"/>
+        <Label Text="Ciencia de la Computación" FontSize="18" TextColor="White"/>
+
+        <Label Text="Habilidades Blandas:" FontSize="18" TextColor="White"/>
+        <ListView x:Name="HabilidadesBlandasList" BackgroundColor="White">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding .}" TextColor="Black"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
