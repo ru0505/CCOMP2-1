@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Formulario_1.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+        <Grid RowDefinitions="auto,*" BackgroundColor="Crimson">
+            <StackLayout BackgroundColor="DarkRed" 
+                         Padding="24"
+                         Grid.Row="0">
+            <Label Text="Formulario" 
+                       HorizontalTextAlignment="Center" 
+                       TextColor="White" 
+                       FontSize="36"/>
+        </StackLayout>
+
+        <ScrollView Grid.Row="1">
+            <StackLayout Padding="15" Margin="10" 
+                         BackgroundColor="green">
+                <StackLayout>
+                    <Label Text="Nombres"
+                           FontSize="18"/>
+                    <Entry Placeholder=" "
+                           PlaceholderColor="#black"
+                           x:Name="nombre"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Apellidos"
+                           FontSize="18"/>
+                    <Entry Placeholder=" "
+                           PlaceholderColor="#black"
+                           x:Name="apellido"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Area"
+                           FontSize="18"/>
+                    <Entry Placeholder=" " 
+                           PlaceholderColor="#black"
+                           x:Name="area"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Estudios"
+                           FontSize="18"/>
+                    <Entry Placeholder="Estudiante, universitario, profesional"
+                           PlaceholderColor="#white"
+                           x:Name="Estudios"/>
+            </StackLayout>
+                <StackLayout>
+                    <Label Text="Años de experiencia"
+                           FontSize="18"/>
+                    <Entry Placeholder="12" 
+                           Keyboard="Numeric"
+                           PlaceholderColor="#black"
+                           x:Name="xp"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Numero de telefono"
+                           FontSize="18"/>
+                    <Entry Placeholder=" " 
+                           Keyboard="Numeric"
+                           PlaceholderColor="#black"
+                           x:Name="tel"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Correo"
+                           FontSize="18"/>
+                    <Entry Placeholder=" " 
+                           PlaceholderColor="#black"
+                           x:Name="correo"/>
+                </StackLayout>
+
+                <Button BackgroundColor="DarkBlue" 
+                        Text="Listo!!" 
+                        TextColor="White"
+                        x:Name="listo"
+                        Clicked="btn_Listo_Clicked"
+                        ></Button>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

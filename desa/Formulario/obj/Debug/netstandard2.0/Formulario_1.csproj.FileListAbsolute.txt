@@ -1,0 +1,16 @@
+C:\Users\sergi\source\repos\Formulario_1\Formulario_1\obj\Debug\netstandard2.0\Formulario_1.csproj.AssemblyReference.cache
+C:\Users\sergi\source\repos\Formulario_1\Formulario_1\obj\Debug\netstandard2.0\Formulario_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sergi\source\repos\Formulario_1\Formulario_1\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\sergi\source\repos\Formulario_1\Formulario_1\obj\Debug\netstandard2.0\curriculum.xaml.g.cs
+C:\Users\sergi\source\repos\Formulario_1\Formulario_1\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\sergi\source\repos\Formulario_1\Formulario_1\obj\Debug\netstandard2.0\Formulario_1.AssemblyInfoInputs.cache
+C:\Users\sergi\source\repos\Formulario_1\Formulario_1\obj\Debug\netstandard2.0\Formulario_1.AssemblyInfo.cs
+C:\Users\sergi\source\repos\Formulario_1\Formulario_1\obj\Debug\netstandard2.0\Formulario_1.csproj.CoreCompileInputs.cache
+C:\Users\sergi\source\repos\Formulario_1\Formulario_1\bin\Debug\netstandard2.0\Formulario_1.deps.json
+C:\Users\sergi\source\repos\Formulario_1\Formulario_1\bin\Debug\netstandard2.0\Formulario_1.dll
+C:\Users\sergi\source\repos\Formulario_1\Formulario_1\bin\Debug\netstandard2.0\ref\Formulario_1.dll
+C:\Users\sergi\source\repos\Formulario_1\Formulario_1\bin\Debug\netstandard2.0\Formulario_1.pdb
+C:\Users\sergi\source\repos\Formulario_1\Formulario_1\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\sergi\source\repos\Formulario_1\Formulario_1\obj\Debug\netstandard2.0\Formulario_1.dll
+C:\Users\sergi\source\repos\Formulario_1\Formulario_1\obj\Debug\netstandard2.0\refint\Formulario_1.dll
+C:\Users\sergi\source\repos\Formulario_1\Formulario_1\obj\Debug\netstandard2.0\Formulario_1.pdb

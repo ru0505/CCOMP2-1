@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Formulario_1.curriculum">
+    <ContentPage.Content>
+            <Grid  RowDefinitions="auto, *" >
+                <Grid Grid.Row="0" BackgroundColor="black" ColumnDefinitions="auto, *" RowDefinitions="auto,*">
+                    <Frame Grid.Column="0"                     
+                       CornerRadius="100"
+                       Margin="20"
+                       Padding="0">
+                    <Image Source="https://i.redd.it/9ydzqmbx5t5b1.jpg"
+                           HeightRequest="150"/>
+                    </Frame>
+                    <StackLayout Grid.Column="1" VerticalOptions="Center">
+                        <Label x:Name="n"
+                               Text="Nombre: "
+                               TextColor="Firebrick"
+                               Margin="10"
+                               FontSize="20"></Label>
+                        <Label x:Name="a"
+                               Text="Apellido: "
+                               TextColor="Firebrick"
+                               Margin="10"
+                               FontSize="20"></Label>
+                    </StackLayout>
+                </Grid>
+            <ScrollView Grid.Row="1" BackgroundColor="black">
+
+                <StackLayout 
+                             Margin="30">
+                    <StackLayout Margin="30">
+                        <Label Text="Mi nivel de estudios es:  "
+                               TextColor="Firebrick"
+                               Margin="10"
+                               x:Name="es"
+                               FontSize="18"></Label>
+                        <Label Text="Mi area de trabajo es:  "
+                               TextColor="Firebrick"
+                               Margin="10"
+                               x:Name="ar"
+                               FontSize="18"></Label>
+                        <Label Text="ESTO LUEGO CAMBIA"
+                               TextColor="Firebrick"
+                               Margin="10"
+                               x:Name="xp"
+                              FontSize="18"></Label>
+                        <Label Text="Telefono:  "
+                               TextColor="Firebrick"
+                               Margin="10"
+                               x:Name="tel"
+                               FontSize="18"></Label>
+                        <Label Text="Correo:  "
+                               TextColor="Firebrick"
+                               Margin="10"
+                               x:Name="co"
+                               FontSize="18"></Label>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
